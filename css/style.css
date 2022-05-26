@@ -1,0 +1,98 @@
+/*
+Estilização geral
+(Beba água, levante, alongue-se, vá dar uma volta, não se force camarada ;D )
+*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+/*
+Classes de utilidade
+(Beba água, levante, alongue-se, vá dar uma volta, não se force camarada ;D )
+*/
+
+.btn-primary {
+  background-color: #1d8974;
+  color: white;
+  text-transform: uppercase;
+  padding: 15px 60px;
+  border: none;
+  border-radius: 30px;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+
+/*
+Estilização navbar
+(Beba água, levante, alongue-se, vá dar uma volta, não se force camarada ;D )
+*/
+#navbar {
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.6);
+  justify-content: center;
+  color: white;
+  width: 100%;
+  position: fixed;
+  top: 0;
+}
+
+#navbar .navbar-container {
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+
+#navbar .navbar-container .logo {
+  height: 40px;
+  width: auto;
+}
+
+#navbar .navbar-container ul {
+  display: flex;
+  list-style: none;
+  font-weight: bold;
+}
+
+#navbar .navbar-container ul li {
+  padding: 0 20px;
+}
+
+#navbar .navbar-container ul li:nth-child(3) {
+  border-right: 1px solid white;
+}
+/*
+Estilização showcase
+(Beba água, levante, alongue-se, vá dar uma volta, não se force camarada ;D )
+*/
+#showcase {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("/img/showcase.webp") center center/cover;
+  background-color: rgba(0, 0, 0, 0.5);
+  background-blend-mode: color;
+  color: white;
+}
+
+#showcase .showcase-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#showcase .showcase-container h2 {
+  font-size: 5rem;
+}
+
+#showcase .showcase-container p {
+  margin: 15px 0;
+  font-size: 1.1rem;
+}

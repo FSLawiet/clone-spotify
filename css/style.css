@@ -1,3 +1,8 @@
+:root {
+  --default-green: #1d8974;
+  --active-green: #1ed760;
+}
+
 /*
 Estilização geral
 (Beba água, levante, alongue-se, vá dar uma volta, não se force camarada ;D )
@@ -16,8 +21,13 @@ Classes de utilidade
 (Beba água, levante, alongue-se, vá dar uma volta, não se force camarada ;D )
 */
 
+.logo {
+  height: 40px;
+  width: auto;
+}
+
 .btn-primary {
-  background-color: #1d8974;
+  background-color: var(--default-green);
   color: white;
   text-transform: uppercase;
   padding: 15px 60px;
@@ -25,6 +35,12 @@ Classes de utilidade
   border-radius: 30px;
   letter-spacing: 1px;
   font-weight: bold;
+  transition: all 300ms ease;
+}
+
+.btn-primary:hover {
+  background-color: var(--active-green);
+  cursor: pointer;
 }
 
 /*
@@ -49,11 +65,6 @@ Estilização navbar
   padding: 20px 0;
 }
 
-#navbar .navbar-container .logo {
-  height: 40px;
-  width: auto;
-}
-
 #navbar .navbar-container ul {
   display: flex;
   list-style: none;
@@ -62,6 +73,12 @@ Estilização navbar
 
 #navbar .navbar-container ul li {
   padding: 0 20px;
+  transition: all 300ms ease;
+}
+
+#navbar .navbar-container ul li:hover {
+  color: #1d8974;
+  cursor: pointer;
 }
 
 #navbar .navbar-container ul li:nth-child(3) {
@@ -95,4 +112,113 @@ Estilização showcase
 #showcase .showcase-container p {
   margin: 15px 0;
   font-size: 1.1rem;
+}
+/*
+Estilização conteúdo do footer
+(Beba água, levante, alongue-se, vá dar uma volta, não se force camarada ;D )
+*/
+
+#footer {
+  background: black;
+  color: white;
+  padding: 80px 0;
+}
+
+#footer .footer-content {
+  display: flex;
+  width: 60%;
+  margin: auto;
+  justify-content: space-between;
+}
+
+#footer .footer-content .footer-menu {
+  margin: 0 40px;
+  list-style: none;
+}
+
+#footer .footer-content .footer-menu p {
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #919496;
+  font-size: 0.8rem;
+}
+
+#footer .footer-content .footer-menu .footer-menu-item {
+  margin: 25px 0;
+  transition: all 300ms ease;
+}
+
+#footer .footer-content .footer-menu .footer-menu-item:hover {
+  color: var(--default-green);
+  cursor: pointer;
+}
+
+.socials {
+  display: flex;
+}
+
+.socials i {
+  margin: 0 20px;
+  font-size: 1.7rem;
+  transition: all 300ms ease;
+}
+
+.socials i:hover {
+  color: var(--active-green);
+  cursor: pointer;
+}
+/*
+Estilização informações do footer
+(Beba água, levante, alongue-se, vá dar uma volta, não se force camarada ;D )
+*/
+#footer .footer-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  color: #919496;
+  font-size: 0.75rem;
+  margin-top: 50px;
+}
+
+#footer .footer-info .footer-info-items {
+  display: flex;
+  list-style: none;
+}
+
+#footer .footer-info .footer-info-items .footer-info-item {
+  margin: 0 10px;
+  font-weight: bold;
+  transition: all 300ms ease;
+}
+
+#footer .footer-info .footer-info-items .footer-info-item:hover {
+  color: var(--default-green);
+  cursor: pointer;
+}
+
+#footer .footer-info .rights {
+  margin-right: 10px;
+}
+
+#footer .footer-info .rights .country {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+#footer .footer-info .rights .country p {
+  transition: all 300ms ease;
+}
+
+#footer .footer-info .rights .country p:hover {
+  color: var(--active-green);
+  cursor: pointer;
+}
+
+#footer .footer-info .rights .country .flag {
+  height: 20px;
+  width: auto;
+  display: inline-block;
+  margin-left: 10px;
 }
